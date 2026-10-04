@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pride Heritage Hotel Gallery - Explore our elegant spaces and exquisite cuisine.">
+    <title>Gallery - Pride Heritage Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar solid" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">P</span>
+                <span class="logo-text">Pride Heritage Hotel</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="book-table.html" class="btn-primary btn-nav">Book a Table</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-link">Home</a></li>
+            <li><a href="menu.html" class="mobile-link">Menu</a></li>
+            <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+            <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+            <li><a href="book-table.html" class="btn-primary mobile-cta">Book a Table</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header gallery-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <p class="page-label">VISUAL JOURNEY</p>
+            <h1 class="page-title">Our Gallery</h1>
+            <p class="page-subtitle">A glimpse into the elegance and artistry that awaits you</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters" data-aos="fade-up">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="dining">Dining Spaces</button>
+                <button class="gallery-filter" data-filter="food">Cuisine</button>
+                <button class="gallery-filter" data-filter="ambiance">Ambiance</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Image 1 - Signature Dishes -->
+                <div class="gallery-item" data-category="food" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="img/unnamed (4).webp" alt="Signature dishes featuring spiced noodles and seafood on elegant green marble table" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(0)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Signature Creations</h3>
+                                <p>Masterfully plated dishes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 - Grand Dining Hall -->
+                <div class="gallery-item" data-category="dining ambiance" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="img/unnamed (3).webp" alt="Grand hall with golden ambient lighting and elegant interiors" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(1)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Grand Hall</h3>
+                                <p>Where celebrations come alive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 - Outdoor Terrace -->
+                <div class="gallery-item" data-category="dining ambiance" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-image">
+                        <img src="img/unnamed (2).webp" alt="Outdoor terrace dining area with skyline view and comfortable seating" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(2)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Terrace Lounge</h3>
+                                <p>Al fresco dining under the sky</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 - Menu Starters -->
+                <div class="gallery-item" data-category="food" data-aos="fade-up">
+                    <div class="gallery-image">
+                        <img src="img/unnamed (5).webp" alt="Menu showcasing starters section with variety of appetizers" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(3)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Curated Menu</h3>
+                                <p>Starters that set the tone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 - Menu Soups & Starters -->
+                <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-image">
+                        <img src="img/unnamed.webp" alt="Menu displaying soups and starters selection" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(4)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Heritage Flavors</h3>
+                                <p>From soups to starters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 - Menu Indian Food -->
+                <div class="gallery-item" data-category="food" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-image">
+                        <img src="img/unnamed (1).webp" alt="Menu featuring Indian cuisine section with authentic dishes" loading="lazy">
+                        <div class="gallery-overlay">
+                            <button class="gallery-expand" onclick="openLightbox(5)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <polyline points="9 21 3 21 3 15"></polyline>
+                                    <line x1="21" y1="3" x2="14" y2="10"></line>
+                                    <line x1="3" y1="21" x2="10" y2="14"></line>
+                                </svg>
+                            </button>
+                            <div class="gallery-info">
+                                <h3>Indian Specialties</h3>
+                                <p>Authentic regional flavors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <button class="lightbox-prev" onclick="prevImage()">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="lightbox-next" onclick="nextImage()">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="gallery-cta-content" data-aos="fade-up">
+                <h2>Experience the Pride Heritage Difference</h2>
+                <p>Reserve your table and immerse yourself in an unforgettable dining experience</p>
+                <a href="book-table.html" class="btn-primary">Book Your Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">P</span>
+                        <span class="logo-text">Pride Heritage Hotel</span>
+                    </div>
+                    <p class="footer-tagline">A Legacy of Taste</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-info">
+                        <p>
+                            <strong>Address:</strong><br>
+                            123 Heritage Lane, MG Road<br>
+                            Bangalore, Karnataka 560001
+                        </p>
+                        <p>
+                            <strong>Phone:</strong><br>
+                            +91 80 4567 8900
+                        </p>
+                        <p>
+                            <strong>Email:</strong><br>
+                            reservations@prideheritage.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Hours</h4>
+                    <div class="footer-info">
+                        <p><strong>Lunch</strong><br>12:00 PM - 3:30 PM</p>
+                        <p><strong>Dinner</strong><br>7:00 PM - 11:30 PM</p>
+                        <p class="footer-note">Open All Days</p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="book-table.html">Reservations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pride Heritage Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
