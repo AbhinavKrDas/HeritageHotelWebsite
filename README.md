@@ -47,46 +47,7 @@ restaurant/
     └── unnamed (8).webp
 ```
 
-## 🖼️ Image Usage Map
 
-All 9 provided images are used throughout the website:
-
-1. **unnamed (4).webp** - Signature dishes on marble table
-   - Home page: Signature Dishes card
-   - Gallery: Featured dish image
-   
-2. **unnamed (7).webp** - White marble elegant dining hall
-   - Home page: About section image
-   - Booking page: Header background
-   - Gallery: Heritage Dining Hall
-   
-3. **unnamed (2).webp** - Outdoor terrace with skyline
-   - Home page: Experience section background
-   - Gallery: Terrace Lounge
-   
-4. **unnamed (6).webp** - Golden ambient lighting dining room
-   - Home page: Signature Dishes card
-   - Footer: Background image
-   - Gallery: Golden Hour Dining
-   
-5. **unnamed (8).webp** - Green marble intimate dining space
-   - Home page: Signature Dishes card
-   - Menu page: Page header background
-   - Gallery: Private Dining
-   
-6. **unnamed (5).webp** - Menu starters page
-   - Gallery: Menu showcase
-   
-7. **unnamed.webp** - Menu soups & starters page
-   - Gallery: Menu showcase
-   
-8. **unnamed (1).webp** - Menu Indian food page
-   - Gallery: Menu showcase
-   
-9. **unnamed (3).webp** - Grand hall with golden lighting
-   - Home page: Hero background
-   - Gallery page: Header background
-   - Gallery: Grand Hall image
 
 ## 🚀 How to Open the Website
 
